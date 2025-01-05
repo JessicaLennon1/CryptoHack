@@ -1,0 +1,9 @@
+x = 12
+y = 65537
+z = 17
+i = 23
+
+flag = z * i
+
+ciphertext = pow(x, y, flag)
+print (ciphertext)
