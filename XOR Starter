@@ -1,0 +1,7 @@
+flag = "label"
+for i in flag:
+  print(chr(ord(i)^13), end="")
+print("")
+
+Output:
+crypto{aloha}
