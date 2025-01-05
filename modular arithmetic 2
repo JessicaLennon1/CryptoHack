@@ -1,0 +1,9 @@
+def mod_exp(base, exp, mod):
+    return pow(base, exp, mod)
+
+base = 27324678765
+exp = 65536
+mod = 65537
+
+result = mod_exp(base, exp, mod)
+print(result)
