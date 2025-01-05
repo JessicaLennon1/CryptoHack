@@ -1,0 +1,20 @@
+modulo = 29
+
+ints = [14, 6, 11]
+
+def is_quadratic_residue(x, modulo):
+    for i in range(modulo):
+        if (i * i) % modulo == x:
+            return i
+    
+for x in ints:
+    root = is_quadratic_residue(x, modulo)
+    if root is not None:
+        quadratic_residue = x
+        root1 = root
+        root2 = (modulo - root) % modulo
+        
+print (root1, root2)
+
+Output:
+8,21
